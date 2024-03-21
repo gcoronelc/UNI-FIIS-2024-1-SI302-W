@@ -13,15 +13,3 @@ TEMAS DE INVESTIGACIÓN PARA LA PC2
 10.- Patrón Inyección de Dependencias
 
 
-Practica 2:
--------------------------------
-Exposixcion: Semana 6
-Practica: Semana 7
-
-Grupo 1: ESPINOZA RICRA - Tema 02
-Grupo 2: VILLAR ROJAS - Tema 07
-Grupo 3: AVILES AGUADO - Tema 06
-Grupo 4: 
-Grupo 5: 
-Grupo 6: 
-Grupo 7: 

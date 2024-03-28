@@ -19,13 +19,18 @@
 
 ## Delegado
 
-- Nombre: 
-- Correo: 
+- Nombre: Steven Joan Cadillo Saavedra
+- Correo: steven.cadillo.s@uni.pe
 
-## Subdelegado
+## Subdelegada
 
-- Nombre: 
-- Correo: 
+- Nombre: Sharon Guisado Alejo
+- Correo: sharon.guisado.a@uni.pe
+
+## Subdelegada
+
+- Nombre: Delia Elizabeth Ibarra Julcahuanca
+- Correo: delia.ibarra.j@uni.pe
 
 # RECURSOS UTILES
 

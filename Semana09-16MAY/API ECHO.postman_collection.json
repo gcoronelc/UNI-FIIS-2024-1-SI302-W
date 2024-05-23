@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "1251490f-5af7-40f2-8cf2-0f678079e626",
+		"name": "API ECHO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24743107",
+		"_collection_link": "https://restless-crater-974849.postman.co/workspace/UNI-FIIS_2024-1_POO_SEC-V~89251a68-c71d-47e3-b467-1058012cff7a/collection/24743107-1251490f-5af7-40f2-8cf2-0f678079e626?action=share&source=collection_link&creator=24743107"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2&foo3=Gustavo",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						},
+						{
+							"key": "foo2",
+							"value": "bar2"
+						},
+						{
+							"key": "foo3",
+							"value": "Gustavo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Real Madrid\",\r\n    \"apellido\":\"Campeon\",\r\n    \"edad\":122\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

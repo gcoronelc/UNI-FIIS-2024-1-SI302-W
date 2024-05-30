@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "91a146ad-22a0-484e-bcba-901c729ff753",
+		"name": "Eureka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24743107",
+		"_collection_link": "https://restless-crater-974849.postman.co/workspace/UNI-FIIS_2024-1_POO_SEC-W~77308d45-9d16-43a3-abab-f20c05ae3c07/collection/24743107-91a146ad-22a0-484e-bcba-901c729ff753?action=share&source=collection_link&creator=24743107"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/eureka/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eureka",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/eureka/cliente/00001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eureka",
+						"cliente",
+						"00001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente no existe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/eureka/cliente/00099",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eureka",
+						"cliente",
+						"00099"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cliente\":\"00003\",\r\n    \"moneda\":\"01\",\r\n    \"empleado\":\"0006\",\r\n    \"importe\":7800.0,\r\n    \"clave\":\"787878\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/eureka/cuenta/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eureka",
+						"cuenta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

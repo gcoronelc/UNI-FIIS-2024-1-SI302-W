@@ -1,0 +1,1 @@
+var gEmpleado = "0002";

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CREAR NUEVA CUENTA</h1>
+
+      <div class="card">
+        <div class="card-header">Datos de la nueva cuenta</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group row">
+              <label for="cliente" class="col-sm-2 col-form-label">Cliente</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cliente"
+                  placeholder="Codigo del cliente"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="moneda" class="col-sm-2 col-form-label">Moneda</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="moneda"
+                  placeholder="Codigo de moneda"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="importe" class="col-sm-2 col-form-label">Importe</label >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="importe"
+                  placeholder="Importe de apertura"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="clave" class="col-sm-2 col-form-label">Clave</label>
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="clave"
+                  placeholder="Clave de la cuenta"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10 offset-sm-2">
+                <button type="button" class="btn btn-primary" id="btnProcesar">
+                  Procesar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      $(function () {
+        $("#btnProcesar").click(fnBtnProcesar);
+      });
+
+      function fnBtnProcesar() {
+        // Datos
+        let cliente = $("#cliente").val();
+        let moneda = $("#moneda").val();
+        let importe = $("#importe").val();
+        let clave = $("#clave").val();
+
+        var settings = {
+          url: "http://localhost:8080/eureka/cuenta/crear",
+          method: "POST",
+          timeout: 0,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          data: JSON.stringify({
+            cliente: cliente,
+            moneda: moneda,
+            empleado: gEmpleado,
+            importe: importe,
+            clave: clave,
+          }),
+        };
+
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+          alert(response);
+        }).fail(function() {
+            alert( "error" );
+        });
+      }
+    </script>
+  </body>
+</html>
